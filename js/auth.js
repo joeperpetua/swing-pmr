@@ -22,6 +22,7 @@ logout = () => {
     });
 }
 
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
@@ -46,9 +47,14 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 render = (isLogged) => {
   let nav = document.getElementById('nav');
-  
+  debugger;
   if (isLogged && nav) {
     renderNav(nav, true);
+
+    if(window.location.pathname == "/login.html"){ 
+       let message = document.getElementById('AlreadyLogged');      
+       message.setAttribute("style", "display: block");      
+    }
 
     if (window.location.pathname == "/ajouter-location.html") {
       let wrapper = document.getElementById('wrapper');
@@ -200,6 +206,11 @@ render = (isLogged) => {
       } 
     }
 
+    if(window.location.pathname == "/login.html"){ 
+      let form = document.getElementById('Form');      
+      form.setAttribute("style", "display: block");      
+      }    
+
     if (window.location.pathname == "/ajouter-route.html") {
       let wrapper = document.getElementById('wrapper');
       if (wrapper) {
@@ -211,6 +222,7 @@ render = (isLogged) => {
       } 
     }
   }
+  
   
 }
 

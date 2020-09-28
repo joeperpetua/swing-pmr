@@ -26,7 +26,7 @@
       </div>
     </nav>
 
-    <section class="container-fluid">
+    <section id="Form" class="container-fluid form-login">
         <form class="container-md form">
             
             <div class="form-group">
@@ -42,7 +42,8 @@
             <br>
             
         </form>
-        <div class="mx-auto">
+
+        <div class="mx-auto log-button">
             <button class="btn btn-primary mx-auto" onclick="login()">S'identifier</button>
         </div>
 
@@ -50,6 +51,16 @@
 
         <h5 id="msg"></h5>
     </section>
+
+    <section id="AlreadyLogged" class="container-fluid message-authenticated">
+      <div class="authenticated-message">
+        <h2>Déjà identifié</h2>            
+      </div>
+      <div class="mx-auto goback-button">        
+        <a href="/index.html" class="btn btn-primary mx-auto" >Revenir à l'accueil</a>
+      </div>
+    </section>
+
 
 
 

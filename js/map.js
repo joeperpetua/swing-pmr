@@ -25,10 +25,6 @@ initMap = (asc, iti) => {
     
 }
 
-window.onload = function(){
-
-};
-
 function addMarkers(refMap){
     for (let i = 0; i < markers.length; i++) {
         markers.pop(i)

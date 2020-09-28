@@ -26,6 +26,20 @@ summary::-webkit-details-marker{
     color: rgba(0,0,0,0);
 }
 
+.authenticated-message{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.message-authenticated{
+    display: none;
+}
+
+.form-login{
+    display: none;
+}
+
 summary{
     cursor: pointer;
     outline: none;
