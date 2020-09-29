@@ -47,7 +47,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 render = (isLogged) => {
   let nav = document.getElementById('nav');
-  debugger;
+  
   if (isLogged && nav) {
     renderNav(nav, true);
 
